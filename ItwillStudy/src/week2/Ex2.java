@@ -1,0 +1,29 @@
+package week2;
+
+import java.util.Arrays;	// Ctrl + Shift + o
+
+public class Ex2 {
+
+	public static void main(String[] args) {
+		/* 중앙값 구하기
+		 * 중앙값은 어떤 주어진 값들을 크기의 순서대로 정렬했을 때 가장 중앙에 위치하는 값을 의미합니다. 
+		 * 예를 들어 1, 2, 7, 10, 11의 중앙값은 7입니다. 
+		 * 정수 배열 array가 매개변수로 주어질 때, 중앙값을 return 하도록 solution 함수를 완성해보세요.
+		 * */
+		
+		
+	}
+
+}
+
+class Solution2 {
+    public int solution(int[] array) {
+    	
+    	// Arrays클래스의 메서드 sort를 사용해서 배열의 요소를 오름차순으로 정렬
+    	// 이때 Arrays클래스를 사용하기 위해 import문 삽입 => Ctrl + Shift + o
+    	Arrays.sort(array);
+    	
+    	// 중앙값을 구하려면 배열의 인덱스는 배열의 길이 / 2 번째가 된다. 
+        return (array[array.length/2]);
+    }
+}
